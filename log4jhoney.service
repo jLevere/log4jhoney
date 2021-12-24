@@ -7,7 +7,7 @@ User=gaze
 Group=www-data
 WorkingDirectory=/home/gaze/log4jhoney
 Environment="PATH=/home/gaze/log4jhoney/venv/bin"
-ExecStart=/home/gaze/log4jhoney/venv/bin/uwgsi --ini log4jhoney.ini
+ExecStart=/home/gaze/log4jhoney/venv/bin/uwsgi --ini log4jhoney.ini
 
 [Install]
 WantedBy=multi-user.target

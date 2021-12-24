@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to server log4jhoney
+After=network.target
+
+[Service]
+User=gaze
+Group=www-data
+WorkingDirectory=/home/gaze/log4jhoney
+Environment="PATH=/home/gaze/log4jhoney/venv/bin"
+ExecStart=/home/gaze/log4jhoney/venv/bin/uwgsi --ini log4jhoney.ini
+
+[Install]
+WantedBy=multi-user.target
